@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--
+        animate.css
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link  rel="stylesheet" href="assets/css/style.css">
+    <title>Luca Mozzoni</title>
+</head>
+<body>
+
+<!--
+    grid start
+-->
+<div class="container-fluid">
+    <div class="container">
+
+        <!--
+            first section: WHO I AM
+        -->
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 col scroll-section">
+                <h1 class="name animate__animated animate__fadeInDownBig">Luca Mozzoni</h1>
+                <div class="payoff animate__animated animate__fadeInLeft animate__delay-1s">
+                    <h2>Dream. Design. Develop.</h2>
+                </div>
+                <div class="intro content">
+                    <h2>Who I am (not):</h2>
+                    <h3>I'm not <span id="c-word">you</span></h3>
+                    <p class="lead info">
+                        I love computers, they're great... <br>
+                        but they're useless without a human.
+                    </p>
+                    <p class="lead info">
+                        I love caring about details... <br>
+                        and I'm allergic to those who don't. <br>
+                    </p>
+                    <p class="lead info">
+                        I love being able to decide where I work and when... <br>
+                        but more importantly who I work for.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 animate__animated animate__fadeIn animate__delay-2s">
+                <img src="assets/img/planes.jpg" class="img-fluid img-bg" alt="Planes">
+
+            </div>
+        </div>
+
+        <!--
+            second section: WHAT I KNOW
+        -->
+        <div class="row scroll-section">
+            <div class="col-md-6 col">
+                <div class="content">
+                    <h2>What I do</h2>
+                    <p class="lead info">
+                        My goal is to use <strong>front-end technologies</strong> to create smooth
+                        <strong>user experiences</strong> that go along with eye pleasing <strong>user interfaces</strong>.
+                    </p>
+                    <p class="lead info">
+                        I'm about to graduate in Computer Science @ <a href="https://www.unicam.it/" target="_blank">Unicam</a>.
+                        Meanwhile, I pick up and try new technologies every month.
+                        Keeping yourself up to date is <em>sooo important</em>.
+                    </p>
+                    <p class="lead info">
+                        I have a decent knowledge of:
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><p class="h4">HTML5</p></li>
+                            <li class="list-inline-item"><p class="h4">CSS3</p></li>
+                            <li class="list-inline-item"><p class="h4">JavaScript</p></li>
+                            <li class="list-inline-item"><p class="h4">C</p></li>
+                            <li class="list-inline-item"><p class="h4">Java</p></li>
+                            <li class="list-inline-item"><p class="h4">Photoshop</p></li>
+                        </ul>
+                    <p class="lead info">
+                        I want to learn:
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><p class="h4">Wordpress</p></li>
+                            <li class="list-inline-item"><p class="h4">React</p></li>
+                            <li class="list-inline-item"><p class="h4">UI/UX Design Concepts</p></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+            third section: WHERE I AM
+        -->
+        <div class="row scroll-section">
+            <div class="col-md-6 col">
+                <div class="content">
+                    <h2>Where I am</h2>
+                    <p class="lead info">
+                        Here's my <a href="https://github.com/motsiiih" target="_blank">Github</a>, but there's not much to see <em>(yet)</em>.
+                    </p>
+                    <p class="lead info">
+                        Also, feel free to take a look at my <a href="#">Linkedin</a>!
+                    </p>
+                    <p class="lead info">
+                        You can send me an email at <a href="mailto:mozzonilc@gmail.com">mozzonilc@gmail.com</a> just about anytime!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            grid end
+        -->
+    </div>
+</div>
+
+<!--
+    jquery + bootstrap scripts
+-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<!--
+    word-carousel script
+-->
+
+<script type="text/javascript">
+    var words = ["a t-rex", "yesterday's pizza", "a bike", "a rapper", "a koala", "a dream", "your favorite beer",
+                "Queen Elizabeth II", "Britney Spears", "a robot", "a computer", "an orange juice", "fake", "Brad",
+                "Steve", "perfect", "Karen", "a banana", "a cactus", "vegan", "Superman", "Joe", "Ted", "Mickey Mouse",
+                "Batman", "late", "an anime character", "an ice cream", "a cookie", "a pair of jeans", "a chicken nugget",
+                "Sheldon Cooper", "your lucky number"]
+    var counter = 0
+    var word = document.getElementById("c-word")
+    setInterval(updateCWord, 1000)
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    function updateCWord(){
+        counter = getRandomInt(0, words.length);
+        word.innerHTML = words[counter]
+    }
+</script>
+
+
+<!--
+    Scrollify scripts
+-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.15/jquery.scrollify.min.js"
+        integrity="sha512-pfaJM+9xCwhzl6ZrHGL6MHPe2/QnYevHZGpEtBUuyggZuhh3SzPvwvZbB3bxZ8990IgxlhuhKIXinhXiJfLBXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(function() {
+        $.scrollify({
+            section : ".scroll-section",
+            standardScrollElements: "content",
+
+        });
+    });
+</script>
+
+</body>
+</html>
