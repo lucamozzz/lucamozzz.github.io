@@ -11,10 +11,16 @@ h1, h2, h3{
     color: white;
 }
 
+.hdr {
+  padding-top: 350px;
+  vertical-align: middle;
+}
+
 .img-bg{
-    max-width: 140%;
-    padding-top: 50px;
-    opacity: 70%;
+    max-width: 100%;
+    padding-top: 250px;
+    opacity: 100%;
+    margin: 0 auto;
 }
 
 .lead strong{
@@ -106,7 +112,23 @@ a:link, a:visited, a:hover, a:active{
     }
 }
 
+@media (min-width: 992px) {
+  .img-bg{
+    padding-left: 150px;
+    vertical-align: middle;
+  }
+}
+
 @media (max-width: 992px) {
+
+  .hdr{
+    padding-top: 75px;
+  }
+
+  .img-bg{
+    max-width: 50%;
+    padding-top: 20px;
+  }
 
     .intro{
         padding-top: 60px;
@@ -126,10 +148,6 @@ a:link, a:visited, a:hover, a:active{
 }
 
 @media (max-width: 1200px) {
-
-    .img-bg {
-        display: none;
-    }
 }
 
 @media (min-width: 1200px) {
