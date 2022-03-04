@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #000;
     color: #d6d6d6;
 }
 
@@ -63,6 +63,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .list-inline-item{
+    display: block;
     color: white;
 }
 
