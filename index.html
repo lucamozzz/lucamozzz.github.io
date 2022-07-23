@@ -4,32 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto-mono': ['"Roboto Mono"', 'monospace'],
+                    },
+                },
+            },
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="bg-slate-800">
-    <div class="py-10">
-        <div class="max-w-sm rounded-lg overflow-hidden shadow-lg m-auto">
+<body class="bg-slate-500 relative">
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li> </li>
+        </ul>
+    </div>
+
+    <div class="fixed top-0 left-0 right-0 py-10">
+        <div class="max-w-sm rounded-lg overflow-hidden m-auto shadow-xl">
             <img class="w-full max-h-sm" src="img/moz.jpeg">
-            <div class="bg-white">
-                <div class="px-6 py-4">
+            <div class="bg-white/50">
+                <div class="opacity-100 font-roboto-mono px-6 py-4">
                     <div class="font-bold text-xl mb-2">Luca Mozzoni</div>
                     <p class="text-gray-700 text-base">
-                        Italian software developer with an eye for detail. Also interested in sports and nerd stuff.
+                        _made in italy <br>
+                        _computer science student <br>
+                        _passionate about details <br>
+                        _interested in nerd stuff <br>
+                        _also has friends
                     </p>
                 </div>
                 <div class="px-6 pt-4 pb-2">
                     <span
-                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                        class="opacity-100 shadow-md inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                         <a href="https://github.com/lucamozzz" class="fa fa-github" target="_blank"> Github</a>
                     </span>
                     <span
-                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                        <a href="https://instagram.com/lucamozzz" class="fa fa-instagram" target="_blank"> Instagram</a>
+                        class="opacity-100 shadow-md inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                        <a href="https://instagram.com/lucamozzz" class="fa fa-instagram" target="_blank">
+                            Instagram</a>
                     </span>
                     <span
-                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                        class="opacity-100 shadow-md inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                         <a href="mailto:mozzonilc@gmail.com" class="fa fa-google" target="_blank"> Gmail</a>
                     </span>
                 </div>
